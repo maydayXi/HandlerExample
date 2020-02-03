@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Handler02Activity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rectangle_drawable"
+        android:padding="6sp"
+        android:text="@string/txt_title"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:padding="12sp"
+        android:stretchColumns="1"
+        android:background="@drawable/rectangle_drawable"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TableRow
+            android:layout_marginTop="6sp"
+            android:layout_marginBottom="6sp"
+            android:padding="4sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Switch
+                android:id="@+id/handler01Switch"
+                android:text="@string/swc1" />
+
+            <SeekBar
+                android:id="@+id/handler01_seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:max="50" />
+        </TableRow>
+
+        <TableRow
+            android:padding="4sp"
+            android:layout_marginTop="6sp"
+            android:layout_marginBottom="6sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Switch
+                android:id="@+id/handler02Switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/swc2" />
+
+            <SeekBar
+                android:id="@+id/handler02_seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:max="50" />
+        </TableRow>
+
+        <TableRow
+            android:padding="4sp"
+            android:layout_marginTop="6sp"
+            android:layout_marginBottom="6sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Switch
+                android:id="@+id/handler03Switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/swc3" />
+
+            <SeekBar
+                android:id="@+id/handler03_seekBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:max="50" />
+        </TableRow>
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

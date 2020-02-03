@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Handler02</string>
+    <string name="txt_title">Handler02</string>
+    <string name="swc1">Handler1</string>
+    <string name="swc2">Handler2</string>
+    <string name="swc3">Handler3</string>
+</resources>
